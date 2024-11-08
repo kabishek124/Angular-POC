@@ -16,7 +16,6 @@
             "outputPath": "dist/angular-poc",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "proxyConfig": "proxy.conf.json",
             "polyfills": [
               "zone.js"
             ],
