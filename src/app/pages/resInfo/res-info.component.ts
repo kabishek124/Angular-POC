@@ -22,4 +22,8 @@ export class ResInfoComponent implements OnInit{
             this.restaurant = this.resService.getRestaurantById(id);
         }
     }
+
+    calculateDiscountedPrice(price: number): number {
+        return Math.round((price * 82) * 0.2);
+    }
 }

@@ -57,3 +57,9 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
 }
+
+.no-results-message{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

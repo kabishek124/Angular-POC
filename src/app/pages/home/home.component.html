@@ -4,7 +4,13 @@
             Explore Restaurants
         </div>
         <div class="bar-controls">
-            <input type="text" placeholder="Search res..." class="search-input" />
+            <input 
+                type="text" 
+                placeholder="Search res..." 
+                class="search-input" 
+                [(ngModel)]="searchKey"
+                (input)="onChange()"
+            />
             <select class="filter-class">
                 <option value="rating">Rating</option>
                 <option value="cuisine">Cuisine</option>
@@ -13,14 +19,19 @@
         </div>
     </div>
     <div class="res-list">
-        <app-res-card 
-            *ngFor="let restaurant of restaurants"
-            [resId]="restaurant._id"
-            [resName]="restaurant.name"
-            [resCuisine]="restaurant.cuisine"
-            [resAddress]="restaurant.address"
-            [resRating]="restaurant.rating"
-            [resCity]="restaurant.city">
-        </app-res-card>
+        <ng-container *ngIf="restaurants.length > 0; else noResults">
+            <app-res-card 
+                *ngFor="let restaurant of restaurants"
+                [resId]="restaurant._id"
+                [resName]="restaurant.name"
+                [resCuisine]="restaurant.cuisine"
+                [resAddress]="restaurant.address"
+                [resRating]="restaurant.rating"
+                [resCity]="restaurant.city">
+            </app-res-card>
+        </ng-container>
+        <ng-template #noResults>
+            <p class="no-results-message">No results found for your search.</p>
+        </ng-template>
     </div>
 </div>

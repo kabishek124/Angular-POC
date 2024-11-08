@@ -294,6 +294,9 @@ export class RestaurantService{
 
     getRestaurantById(id: string) : Observable<any>{
         return this.restaurants.find((restaurant: any) => restaurant._id === id);
+    }
 
+    searchRestaurant(serachKey : string) : Observable<any>{
+        return this.restaurants.filter((restaurant: any) => restaurant.name.toLowerCase().includes(serachKey.toLowerCase()));
     }
 }

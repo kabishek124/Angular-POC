@@ -14,9 +14,14 @@ import { CommonModule } from "@angular/common";
 
 export class HomeComponent implements OnInit {
     restaurants: any = [];
+    searchKey: string = '';
     constructor(private resService : RestaurantService) {}
 
     ngOnInit(): void {
         this.restaurants = this.resService.getRestaurant();        
+    }
+
+    onChange(){
+        this.restaurants = this.resService.searchRestaurant(this.searchKey);
     }
 }

@@ -13,7 +13,7 @@
     <h2>Menu</h2>
     <div *ngFor="let item of restaurant.menu" class="menu-item">
       <p><strong>Dish:</strong> {{ item.name }}</p>
-      <p><strong>Price:</strong> {{ item.price | currency: "INR" }}</p>
+      <p><strong>Price:</strong> {{ calculateDiscountedPrice(item.price)| currency: "INR" }}</p>
     </div>
   </div>
 </div>
