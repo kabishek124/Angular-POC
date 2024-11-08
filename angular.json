@@ -16,6 +16,7 @@
             "outputPath": "dist/angular-poc",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "proxyConfig": "proxy.conf.json",
             "polyfills": [
               "zone.js"
             ],
@@ -56,6 +57,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {"proxyConfig": "proxy.conf.json"},
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {

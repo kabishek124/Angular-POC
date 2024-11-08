@@ -1,0 +1,26 @@
+<div class="body-container">
+    <div class="bar-container">
+        <div class="bar-heading">
+            Explore Restaurants
+        </div>
+        <div class="bar-controls">
+            <input type="text" placeholder="Search res..." class="search-input" />
+            <select class="filter-class">
+                <option value="rating">Rating</option>
+                <option value="cuisine">Cuisine</option>
+                <option value="price">Price</option>
+            </select>
+        </div>
+    </div>
+    <div class="res-list">
+        <app-res-card 
+            *ngFor="let restaurant of restaurants"
+            [resId]="restaurant._id"
+            [resName]="restaurant.name"
+            [resCuisine]="restaurant.cuisine"
+            [resAddress]="restaurant.address"
+            [resRating]="restaurant.rating"
+            [resCity]="restaurant.city">
+        </app-res-card>
+    </div>
+</div>

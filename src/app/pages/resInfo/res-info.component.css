@@ -1,0 +1,36 @@
+.res-info {
+  margin: 20px;
+}
+
+.res-info-card,
+.res-menu-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.res-info-card h1,
+.res-menu-card h2 {
+  color: #2e7d32; /* Use green color from your theme */
+  margin-bottom: 10px;
+}
+
+.res-info-card p,
+.res-menu-card .menu-item p {
+  margin: 5px 0;
+}
+
+.menu-item {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.menu-item:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}

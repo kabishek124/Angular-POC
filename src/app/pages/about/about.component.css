@@ -1,0 +1,31 @@
+.about-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+  background-color: #34c759; 
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-header h1 {
+  margin: 0;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.about-content p {
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+

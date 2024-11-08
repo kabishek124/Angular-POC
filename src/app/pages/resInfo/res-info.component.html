@@ -1,0 +1,19 @@
+<div class="res-info">
+  <!-- Basic Details Card -->
+  <div class="res-info-card">
+    <h1>{{ restaurant.name }}</h1>
+    <p><strong>Cuisine:</strong> {{ restaurant.cuisine }}</p>
+    <p><strong>Address:</strong> {{ restaurant.address }}</p>
+    <p><strong>City:</strong> {{ restaurant.city }}</p>
+    <p><strong>Rating:</strong> {{ restaurant.rating }}</p>
+  </div>
+
+  <!-- Menu Details Card -->
+  <div class="res-menu-card">
+    <h2>Menu</h2>
+    <div *ngFor="let item of restaurant.menu" class="menu-item">
+      <p><strong>Dish:</strong> {{ item.name }}</p>
+      <p><strong>Price:</strong> {{ item.price | currency: "INR" }}</p>
+    </div>
+  </div>
+</div>

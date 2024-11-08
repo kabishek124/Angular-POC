@@ -1,0 +1,77 @@
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h1 {
+    color: #34c759;
+    margin-bottom: 20px;
+  }
+  
+  .contact-container p {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    margin-bottom: 10px;
+  }
+  
+  .info-item h3 {
+    margin: 5px 0;
+    color: #ff8c00; /* Orange color */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #ff8c00; /* Orange border when focused */
+  }
+  
+  .submit-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2c7a7b; /* Green background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #ff8c00; /* Orange background on hover */
+  }
+  
